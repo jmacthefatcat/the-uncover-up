@@ -4,7 +4,6 @@ body {
   background-position: center;
   background-size: contain;
   background-repeat: repeat;
-  color: var(--grey);
 }
 
 .serif {
@@ -81,4 +80,13 @@ nav {
 
 .nav-item:last-of-type {
   margin-right: 0;
+}
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cluster>* {
+  margin: var(--s);
 }
