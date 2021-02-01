@@ -29,7 +29,7 @@
   --measure: 65ch;
   line-height: var(--scale);
   font-size: calc(.333vw + 0.75em);
-  font-family: var(--font-plain);
+  font-family: sans-serif;
   background-color: var(--white);
   color: var(--dark-grey);
 }
