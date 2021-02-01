@@ -1,0 +1,84 @@
+/* by jmac */
+body {
+  background-image: url('../imgs/paper-bg.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat;
+  color: var(--grey);
+}
+
+.serif {
+  font-family: source-sans-pro, serif;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+  transition: background 0.4s, color 0.4s;
+}
+
+a:hover {
+  background-color:var(--dark-grey);
+  color: var(--white);
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: var(--s);
+}
+
+.cover>* {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cover> :first-child:not(.centered) {
+  margin-top: 0;
+}
+
+.cover> :last-child:not(.centered) {
+  margin-bottom: 0;
+}
+
+.cover>.centered {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.stack * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.stack>*+* {
+  margin-top: var(--s);
+}
+
+nav {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.nav-item {
+  margin-left: var(--s);
+  margin-right: var(--s);
+}
+
+.nav-item:first-of-type {
+  margin-left: 0;
+}
+
+.nav-item:last-of-type {
+  margin-right: 0;
+}
