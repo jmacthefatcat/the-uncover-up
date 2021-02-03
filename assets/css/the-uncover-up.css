@@ -6,10 +6,6 @@ body {
   background-repeat: repeat;
 }
 
-.font-serif {
-  font-family: source-sans-pro, serif;
-}
-
 a {
   text-decoration: none;
   color: currentColor;
@@ -17,7 +13,7 @@ a {
 }
 
 a:hover {
-  background-color:var(--dark-grey);
+  background-color: var(--dark-grey);
   color: var(--white);
 }
 
@@ -85,8 +81,27 @@ nav {
 .cluster {
   display: flex;
   flex-wrap: wrap;
+  margin: calc(var(--s)*-1);
 }
 
 .cluster>* {
   margin: var(--s);
+}
+
+.who-section-bg-skew {
+  color: var(--white);
+  background-color: var(--dark-grey);
+  transform: skewY(-11deg);
+}
+
+.who-section-content {
+  transform: skewY(11deg);
+}
+
+.who-image {
+  max-width: 260px;
+}
+
+.text-measure {
+  max-width: var(--measure);
 }

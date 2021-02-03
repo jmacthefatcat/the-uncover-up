@@ -1,6 +1,6 @@
 /* Your variables */
 :root {
-  --scale: 1.5;
+  --scale: 1.4;
   --s-5: calc(var(--s-4) / var(--scale));
   --s-4: calc(var(--s-3) / var(--scale));
   --s-3: calc(var(--s-2) / var(--scale));
@@ -26,9 +26,8 @@
   --orange: #FF8C00;
   --white: #FFFFFF;
   --ivory: #FFFFF0;
-  --measure: 65ch;
+  --measure: 70ch;
   line-height: var(--scale);
-  font-size: calc(.333vw + 0.75em);
   font-family: sans-serif;
   background-color: var(--white);
   color: var(--dark-grey);
@@ -121,11 +120,15 @@ h1, h2, h3, h4 {
   hyphens: auto
 }
 
+.text-jumbo {
+  font-size: var(--s6);
+}
+
 .h1, h1 {
   font-size: var(--s4)
 }
 
-.h2, h2 {
+.h2, h2, .text-large {
   font-size: var(--s3)
 }
 
@@ -133,7 +136,7 @@ h1, h2, h3, h4 {
   font-size: var(--s2)
 }
 
-.h4, h4 {
+.h4, h4, .text-medium {
   font-size: var(--s1)
 }
 
