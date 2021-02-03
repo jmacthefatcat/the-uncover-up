@@ -96,6 +96,8 @@ nav {
 
 .who-section-content {
   transform: skewY(11deg);
+  padding-top: var(--s5);
+  padding-bottom: var(--s5);
 }
 
 .who-image {
