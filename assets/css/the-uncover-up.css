@@ -21,12 +21,14 @@ a:hover {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding: var(--s);
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: var(--s2);
 }
 
 .cover>* {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: var(--s);
+  margin-bottom: var(--s);
 }
 
 .cover> :first-child:not(.centered) {
@@ -46,7 +48,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
 }
 
 .stack * {
@@ -56,26 +57,6 @@ a:hover {
 
 .stack>*+* {
   margin-top: var(--s);
-}
-
-nav {
-  display: flex;
-  flex-flow: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-}
-
-.nav-item {
-  margin-left: var(--s);
-  margin-right: var(--s);
-}
-
-.nav-item:first-of-type {
-  margin-left: 0;
-}
-
-.nav-item:last-of-type {
-  margin-right: 0;
 }
 
 .cluster {
@@ -106,4 +87,25 @@ nav {
 
 .text-measure {
   max-width: var(--measure);
+}
+
+.who-container {
+  display: flex;
+  flex-wrap: wrap;
+  --margin: var(--s);
+  --modifier: calc(40rem - 100%);
+  margin: calc(var(--margin) * -1);
+}
+
+.who-container>* {
+  flex-grow: 1;
+  min-width: calc(50% - (var(--margin) * 2));
+  /* remove from both sides */
+  max-width: 100%;
+  flex-basis: calc(var(--modifier) * 999);
+  margin: var(--margin);
+}
+
+.who-container img {
+  border-radius: var(--s-5);
 }
