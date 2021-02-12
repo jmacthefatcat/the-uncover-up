@@ -26,7 +26,8 @@
   --orange: #FF8C00;
   --white: #FFFFFF;
   --ivory: #FFFFF0;
-  --measure: 90ch;
+  --measure: 60ch;
+  --large-measure: 120ch;
   line-height: var(--scale);
   font-family: sans-serif;
   background-color: var(--white);

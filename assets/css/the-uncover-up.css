@@ -21,7 +21,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  max-width: var(--measure);
   margin: 0 auto;
   padding: var(--s2);
 }
@@ -89,6 +88,10 @@ a:hover {
   max-width: var(--measure);
 }
 
+.large-measure {
+  max-width: var(--large-measure);
+}
+
 .who-container {
   display: flex;
   flex-wrap: wrap;
@@ -98,7 +101,7 @@ a:hover {
 }
 
 .who-container>* {
-  flex-grow: 1;
+
   min-width: calc(50% - (var(--margin) * 2));
   /* remove from both sides */
   max-width: 100%;
@@ -106,6 +109,18 @@ a:hover {
   margin: var(--margin);
 }
 
-.who-container img {
+.who-img {
+  border-radius: 100%;
+  transition: border-radius 0.4s;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.who-img:hover {
   border-radius: var(--s-5);
+}
+
+.redacted {
+  background-color: var(--black);
+  color: var(--black);
 }
