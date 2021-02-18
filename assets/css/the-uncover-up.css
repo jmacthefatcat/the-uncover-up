@@ -7,7 +7,7 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: currentColor;
   transition: background 0.4s, color 0.4s;
 }
@@ -80,28 +80,23 @@ a:hover {
   padding-bottom: var(--s5);
 }
 
-.who-image {
-  max-width: 260px;
-}
-
 .text-measure {
   max-width: var(--measure);
 }
 
 .large-measure {
-  max-width: var(--large-measure);
+  max-width: var(--large-measure)
 }
 
 .who-container {
   display: flex;
   flex-wrap: wrap;
-  --margin: var(--s);
+  --margin: var(--s2);
   --modifier: calc(40rem - 100%);
   margin: calc(var(--margin) * -1);
 }
 
 .who-container>* {
-
   min-width: calc(50% - (var(--margin) * 2));
   /* remove from both sides */
   max-width: 100%;
@@ -112,8 +107,8 @@ a:hover {
 .who-img {
   border-radius: 100%;
   transition: border-radius 0.4s;
-  width: 80%;
   margin: 0 auto;
+  width: 90%;
 }
 
 .who-img:hover {
