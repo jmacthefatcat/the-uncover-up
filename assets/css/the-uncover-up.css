@@ -126,3 +126,7 @@ a:hover {
 .redacted:hover {
   color: var(--white);
 }
+
+summary {
+  cursor: pointer;
+}
