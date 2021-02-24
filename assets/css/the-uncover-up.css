@@ -116,6 +116,13 @@ a:hover {
 }
 
 .redacted {
+  display: inline;
   background-color: var(--black);
   color: var(--black);
+  text-transform: uppercase;
+  transition: color 0.4s;
+}
+
+.redacted:hover {
+  color: var(--white);
 }
