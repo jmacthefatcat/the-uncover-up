@@ -1,3 +1,3 @@
 # The Uncover Up
 
-Testing ground for the start of The Uncover Up website.
+Github for the Uncover Up podcast website. ;)
